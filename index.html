@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+
+    <link rel="stylesheet" href="/Users/joelsmatthew/Desktop/My Portfolio/style.css">
+
+    <!-- box icons-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <style>
+        /* Add animation CSS */
+        @keyframes typingAnimation {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        
+        @keyframes homeBgText {
+            0% { background-position: -33rem 0; }
+            100% { background-position: 33rem 0; }
+        }
+        
+        .text-animate h3 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: transparent;
+            -webkit-text-stroke: .7px var(--main-color);
+            background-image: linear-gradient(var(--main-color), var(--main-color));
+            background-repeat: no-repeat;
+            -webkit-background-clip: text;
+            background-position: -33rem 0;
+            animation: homeBgText 6s linear infinite;
+            animation-delay: 2s;
+        }
+        
+        .text-animate h3::after {
+            content: '|';
+            display: inline-block;
+            animation: typingAnimation 0.7s steps(1) infinite;
+            margin-left: 5px;
+            color: var(--main-color);
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Joel S Mathews.<span class="animate" style="--i:1;"></span></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:;"></span>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hey, I'm <span>Joel</span></h1>
+            <div class="text-animate">
+                <h3>UG Student</h3>
+            </div>
+            <p>I am a dedicated second-year engineering student actively immersing myself in the multifaceted world of Computer Science. Currently exploring various domains within this dynamic field.</p>
+    
+            <div class="btn-box">
+                <a href="#" class="btn">Hire Me</a>
+                <a href="#" class="btn">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="https://github.com/joelsmathewss"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/joelsmathews_/"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/joel-s-mathews/"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    
+        <div class="home-imgHover"></div>
+    </section>
+    
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <div class="about-img">
+            <img src="/Users/joelsmatthew/Desktop/My Portfolio/about.jpeg" height="220" alt="">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>Under-Grad Student</h3>
+            <p>As a student pursuing my Bachelor's in Technology , I'm passionate about exploring the latest innovations in the tech industry. I'm always eager to learn and grow in this exciting field. I'm excited to connect with other tech professionals and explore new opportunities to make a positive impact.</p>
+            
+            <div class="btn-box btns">
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- education section design -->
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2008 - 2022</div>
+                            <h3>Schooling -  Assisi Vidyaniketan Public School </h3>
+                            <p>I completed my schooling from Assisi Vidyaniketan Public School with full 90.40% in class 10 and 81.80% in class 12. I took Computer Science for higher studies.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2022 - Current</div>
+                            <h3>BTech Degree in Artificial Intelligence and Data Science - Muthoot Institute of Technology and Science. </h3>
+                            <p>I am currently pursuing my Bachelor Of Technology Degree in Artificial Intelligence and Data Science from Muthoot Institute of Technology and Science under the Kerala Technical University. The course completion year is 2026.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-column">
+                <h3 class="title">Experience</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2024</div>
+                            <h3>Design Thinking Practitioner - IBM </h3>
+                            <p>I received the Design Thinking Practitioner badge from IBM after completing a course on the same.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2024</div>
+                            <h3>Google CyberSecurity Course - Coursera </h3>
+                            <p>I completed a Google CyberSecurity Course offered by Google from Coursera Learning Platform.</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2024</div>
+                            <h3>Data Analytics with Python - SWAYAM NPTEL </h3>
+                            <p>I've complete a Data Analytics with Python offered by IIT Madras on the Swayam NPTEL Platform.</p>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Coding Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>CSS <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>JavaScript <span>65%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Python <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Java <span>65%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>C++ <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Technical Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Data Structures <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Algorithms <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Machine Learning <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Web Development <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Database Management <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Network Security <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <div class="contact-row">
+            <div class="contact-column">
+                <h3>Get In Touch</h3>
+                <p>If you'd like to connect, collaborate, or just say hello, feel free to reach out to me. I'm always open to new opportunities and connections!</p>
+
+                <form action="#">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message">
+                    <div class="alert">Message Sent!</div>
+                </form>
+            </div>
+
+            <div class="contact-column">
+                <h3>Contact Information</h3>
+
+                <p><i class='bx bx-map'></i> Kochi, Kerala, India</p>
+                <p><i class='bx bx-envelope'></i> joelsmathews@outlook.com</p>
+
+                <div class="socials">
+                    <a href="https://github.com/joelsmathewss"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/joelsmathews_/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/joel-s-mathews/"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Joel S Mathews</h3>
+            <p>&copy; 2024 Joel S Mathews | All rights reserved.</p>
+        </div>
+
+        <ul class="socials">
+            <li><a href="https://github.com/joelsmathewss"><i class='bx bxl-github'></i></a></li>
+            <li><a href="https://www.instagram.com/joelsmathews_/"><i class='bx bxl-instagram'></i></a></li>
+            <li><a href="https://www.linkedin.com/in/joel-s-mathews/"><i class='bx bxl-linkedin'></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="/Users/joelsmatthew/Desktop/My Portfolio/app.js"></script>
+</body>
+</html>
