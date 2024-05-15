@@ -562,6 +562,10 @@ span {
     position: relative;
 }
 
+/* Existing CSS styles */
+
+/* Existing CSS styles */
+
 .contact-column form input[type="text"],
 .contact-column form input[type="email"],
 .contact-column form textarea {
@@ -578,7 +582,6 @@ span {
     resize: none;
     height: 15rem;
 }
-
 .contact-column form input[type="submit"] {
     background: var(--main-color);
     border: .2rem solid var(--main-color);
@@ -587,11 +590,13 @@ span {
     font-weight: 600;
     letter-spacing: .1rem;
     cursor: pointer;
-    transition: .5s;
-    padding: 1.2rem 0;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+    padding: 1.2rem 2rem; /* Add padding for spacing around text */
+    border-radius: .8rem; /* Add border radius for curved corners */
 }
 
 .contact-column form input[type="submit"]:hover {
+    background: var(--bg-color);
     color: var(--main-color);
 }
 
@@ -607,6 +612,7 @@ span {
     z-index: 1;
     display: none;
 }
+
 
 .footer {
     background: var(--bg-color);
